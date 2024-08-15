@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="weatherapp.WeatherController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <!-- Location input field -->
+    <TextField fx:id="locationField" promptText="Enter location (e.g., city name or coordinates)" />
+
+    <!-- Button to fetch weather data -->
+    <Button text="Get Weather" onAction="#handleGetWeather" />
+
+    <!-- Labels to display weather information -->
+    <Label fx:id="temperatureLabel" text="Temperature: N/A" />
+    <Label fx:id="humidityLabel" text="Precipitation: N/A" />
+    <Label fx:id="windSpeedLabel" text="Wind Speed: N/A" />
+    <Label fx:id="descriptionLabel" text="Description: N/A" />
+    
+    <!-- The VBox root container for dynamic background changes -->
+    <VBox fx:id="root" />
+    
+</VBox>
